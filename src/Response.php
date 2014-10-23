@@ -8,10 +8,8 @@ use Psr\Http\Message\StreamableInterface;
 /**
  * HTTP response encapsulation
  */
-class Response implements ResponseInterface
+class Response extends Message implements ResponseInterface
 {
-    use MessageTrait;
-
     /**
      * Map of standard HTTP status code/reason phrases
      *

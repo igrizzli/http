@@ -12,10 +12,8 @@ use Psr\Http\Message\StreamableInterface;
  * Allows arbitrary properties, which allows it to be used to transfer
  * state between middlewares.
  */
-class Request implements RequestInterface
+class Request extends Message implements RequestInterface
 {
-    use MessageTrait;
-
     /**
      * @var string
      */

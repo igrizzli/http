@@ -3,12 +3,13 @@ namespace Phly\Http;
 
 use InvalidArgumentException;
 use Psr\Http\Message\StreamableInterface;
+use Psr\Http\Message\MessageInterface;
 
 /**
  * Trait implementing the various methods defined in
  * \Psr\Http\Message\MessageInterface.
  */
-trait MessageTrait
+abstract class Message implements MessageInterface
 {
     /**
      * @var array
